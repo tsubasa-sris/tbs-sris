@@ -1,0 +1,1447 @@
+@import "https://fonts.googleapis.com/css?family=Pathway+Gothic+One";
+@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+html {
+  font-size: 62.5%;
+  font-family: 'Pathway Gothic One', sans-serif;
+  background-color: white; }
+
+.noto {
+  font-family: 'Noto Sans Japanese', serif;
+  font-weight: 100; }
+
+header {
+  background-image: url(../images/title_pc/pc_header-min.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative; }
+  header .title {
+    height: 54vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw; }
+    header .title img.pc {
+      bottom: 0;
+      position: absolute;
+      width: 60vw; }
+    header .title img.sp {
+      display: none; }
+  header a img.pc {
+    display: block;
+    position: absolute;
+    margin-top: calc(100vh - 100px);
+    margin-left: calc(50% - 32px);
+    animation: moveY 2s infinite alternate linear;
+    -ms-animation: moveY 2s infinite alternate linear;
+    -webkit-animation: moveY 2s infinite alternate linear;
+    -moz-animation: moveY 2s infinite alternate linear; }
+  header .swipe img.sp {
+    display: none; }
+  @media (max-width: 1024px) {
+    header .title {
+      height: 52vh;
+      width: 80vw; }
+      header .title img.pc {
+        width: 80vw; }
+    header a img.pc {
+      margin-top: calc(100vh - 120px); } }
+  @media (max-width: 960px) {
+    header .title {
+      height: 50vh;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80vw; }
+      header .title img.pc {
+        bottom: 0;
+        position: absolute;
+        width: 80vw; }
+      header .title img.sp {
+        display: none; } }
+  @media (max-width: 768px) {
+    header {
+      background-image: url(../images/sp_top/sp_header-min.jpg); }
+      header .title {
+        width: 90vw; }
+        header .title img.pc {
+          bottom: 0;
+          position: absolute;
+          width: 90vw; }
+        header .title img.sp {
+          display: none; }
+      header a img.pc {
+        display: none; }
+      header .swipe img.sp {
+        width: 10vw;
+        display: block;
+        position: absolute;
+        left: 5%;
+        right: 0;
+        margin: auto;
+        margin-top: calc(100vh - 160px);
+        animation: moveY 2s infinite alternate linear;
+        -ms-animation: moveY 2s infinite alternate linear;
+        -webkit-animation: moveY 2s infinite alternate linear;
+        -moz-animation: moveY 2s infinite alternate linear; } }
+  @media (max-width: 600px) {
+    header .title {
+      width: 100%;
+      position: relative;
+      position: absolute;
+      top: 17vh; }
+      header .title img.sp {
+        display: block;
+        width: 90%;
+        margin: 0 auto; }
+      header .title img.pc {
+        display: none; }
+    header .swipe img.sp {
+      width: 12vw;
+      margin-top: calc(100vh - 130px); } }
+
+@keyframes moveY {
+  0% {
+    top: 0px; }
+  50% {
+    top: 20px; }
+  100% {
+    top: 0px; } }
+@-ms-keyframes moveY {
+  0% {
+    top: 0px; }
+  50% {
+    top: 15px; }
+  100% {
+    top: 0px; } }
+@-webkit-keyframes moveY /* Safari and Chrome */ {
+  0% {
+    top: 0px; }
+  50% {
+    top: 10px; }
+  100% {
+    top: 0px; } }
+@-moz-keyframes moveY /* Firefox */ {
+  0% {
+    top: 0px; }
+  50% {
+    top: 15px; }
+  100% {
+    top: 0px; } }
+.introduction {
+  background-color: #fafafa;
+  height: 100vh;
+  position: relative; }
+  .introduction .container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh; }
+    .introduction .container .flex {
+      margin-top: -85px; }
+      .introduction .container .flex h1 {
+        font-size: 6.3vw;
+        padding-bottom: 4vh;
+        text-align: center;
+        letter-spacing: 6px; }
+      .introduction .container .flex p.concept {
+        font-size: 1.7vw;
+        line-height: 3.3vw;
+        letter-spacing: 5px;
+        text-align: center;
+        margin-bottom: 2vw; }
+        .introduction .container .flex p.concept br.br-sp {
+          display: none; }
+      .introduction .container .flex p.concept_sp {
+        display: none; }
+      .introduction .container .flex p.capture {
+        font-size: 2.7vw;
+        text-align: center;
+        letter-spacing: 4px; }
+      .introduction .container .flex p.capture_sp {
+        display: none; }
+      .introduction .container .flex p.tsubasa {
+        width: 16.5vw;
+        margin-top: 28px;
+        margin-left: calc(50% + 220px); }
+        .introduction .container .flex p.tsubasa.on svg .path1 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 1s linear forwards;
+          animation: dash 1s linear forwards; }
+        .introduction .container .flex p.tsubasa.on svg .path2 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 0.2s;
+          -webkit-animation-delay: 0.2s;
+          -moz-animation-delay: 0.2s; }
+        .introduction .container .flex p.tsubasa.on svg .path3 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 0.5s;
+          -webkit-animation-delay: 0.5s;
+          -moz-animation-delay: 0.5s; }
+        .introduction .container .flex p.tsubasa.on svg .path4 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 0.8s;
+          -webkit-animation-delay: 0.8s;
+          -moz-animation-delay: 0.8s; }
+        .introduction .container .flex p.tsubasa.on svg .path5 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 1.2s;
+          -webkit-animation-delay: 1.2s;
+          -moz-animation-delay: 1.2s; }
+        .introduction .container .flex p.tsubasa.on svg .path6 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 1.3s;
+          -webkit-animation-delay: 1.3s;
+          -moz-animation-delay: 1.3s; }
+        .introduction .container .flex p.tsubasa.on svg .path7 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 1.9s;
+          -webkit-animation-delay: 1.9s;
+          -moz-animation-delay: 1.9s; }
+        .introduction .container .flex p.tsubasa.on svg .path8 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 2.2s;
+          -webkit-animation-delay: 2.2s;
+          -moz-animation-delay: 2.2s; }
+        .introduction .container .flex p.tsubasa.on svg .path9 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 2.5s;
+          -webkit-animation-delay: 2.5s;
+          -moz-animation-delay: 2.5s; }
+        .introduction .container .flex p.tsubasa.on svg .path10 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 2.8s;
+          -webkit-animation-delay: 2.8s;
+          -moz-animation-delay: 2.8s; }
+        .introduction .container .flex p.tsubasa.on svg .path11 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 3s;
+          -webkit-animation-delay: 3s;
+          -moz-animation-delay: 3s; }
+        .introduction .container .flex p.tsubasa.on svg .path12 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 5s linear forwards;
+          animation: dash 5s linear forwards;
+          animation-delay: 3.3s;
+          -webkit-animation-delay: 3.3s;
+          -moz-animation-delay: 3.3s; }
+        .introduction .container .flex p.tsubasa.on svg .path13 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 3.7s;
+          -webkit-animation-delay: 3.7s;
+          -moz-animation-delay: 3.7s; }
+        .introduction .container .flex p.tsubasa.on svg .path14 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 3.9s;
+          -webkit-animation-delay: 3.9s;
+          -moz-animation-delay: 3.9s; }
+        .introduction .container .flex p.tsubasa.on svg .path15 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 4s;
+          -webkit-animation-delay: 4s;
+          -moz-animation-delay: 4s; }
+        .introduction .container .flex p.tsubasa.on svg .path16 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 4.2s;
+          -webkit-animation-delay: 4.2s;
+          -moz-animation-delay: 4.2s; }
+        .introduction .container .flex p.tsubasa.on svg .path17 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 4.5s;
+          -webkit-animation-delay: 4.5s;
+          -moz-animation-delay: 4.5s; }
+        .introduction .container .flex p.tsubasa.on svg .path18 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 5s linear forwards;
+          animation: dash 5s linear forwards;
+          animation-delay: 4.7s;
+          -webkit-animation-delay: 4.7s;
+          -moz-animation-delay: 4.7s; }
+        .introduction .container .flex p.tsubasa.on svg .path19 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 5s;
+          -webkit-animation-delay: 5s;
+          -moz-animation-delay: 5s; }
+        .introduction .container .flex p.tsubasa.on svg .path20 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 5.3s;
+          -webkit-animation-delay: 5.3s;
+          -moz-animation-delay: 5.3s; }
+        .introduction .container .flex p.tsubasa.on svg .path21 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 5.6s;
+          -webkit-animation-delay: 5.6s;
+          -moz-animation-delay: 5.6s; }
+        .introduction .container .flex p.tsubasa.on svg .path22 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 5.8s;
+          -webkit-animation-delay: 5.8s;
+          -moz-animation-delay: 5.8s; }
+        .introduction .container .flex p.tsubasa.on svg .path23 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 6s;
+          -webkit-animation-delay: 6s;
+          -moz-animation-delay: 6s; }
+        .introduction .container .flex p.tsubasa.on svg .path24 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 6.3s;
+          -webkit-animation-delay: 6.3s;
+          -moz-animation-delay: 6.3s; }
+        .introduction .container .flex p.tsubasa.on svg .path25 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 6.5s;
+          -webkit-animation-delay: 6.5s;
+          -moz-animation-delay: 6.5s; }
+        .introduction .container .flex p.tsubasa.on svg .path26 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 1;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 200;
+          stroke-dashoffset: 200;
+          -webkit-animation: dash 7s linear forwards;
+          animation: dash 7s linear forwards;
+          animation-delay: 6.8s;
+          -webkit-animation-delay: 6.8s;
+          -moz-animation-delay: 6.8s; }
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0; } }
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0; } }
+  .introduction .menu {
+    background-color: #fafafa;
+    position: absolute;
+    top: 87vh;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    z-index: 999 !important; }
+    .introduction .menu .close {
+      display: none; }
+    .introduction .menu ul {
+      text-align: center; }
+      .introduction .menu ul li {
+        letter-spacing: 4px;
+        display: inline-block;
+        font-size: 2.3vw;
+        border-right: 1px solid black; }
+        .introduction .menu ul li a {
+          text-decoration: none;
+          color: black;
+          padding-right: 2vw;
+          padding-left: 2vw;
+          display: inline-block; }
+        .introduction .menu ul li a:hover {
+          color: #847b66;
+          -webkit-animation: zoom .3s;
+          animation: zoom .3s; }
+@-webkit-keyframes zoom {
+  50% {
+    -webkit-transform: scale(1.05); } }
+@keyframes zoom {
+  50% {
+    transform: scale(1.05); } }
+      .introduction .menu ul li:last-child {
+        border-right: none; }
+  .introduction .menu-btn {
+    display: none; }
+  @media (max-width: 1024px) {
+    .introduction .container .flex h1 {
+      font-size: 10vw;
+      padding: 5vw;
+      padding-bottom: 3vw; }
+    .introduction .container .flex p.concept {
+      font-size: 2.3vw;
+      line-height: 4.5vw; }
+      .introduction .container .flex p.concept br.br-sp {
+        display: none; }
+    .introduction .container .flex p.tsubasa {
+      width: 22vw;
+      margin-top: 2vw;
+      margin-left: calc(50% + 190px); }
+    .introduction .container .flex p.capture {
+      font-size: 4.3vw; }
+    .introduction .menu ul li {
+      letter-spacing: 3px;
+      display: inline-block;
+      font-size: 3vw; }
+      .introduction .menu ul li a {
+        padding-right: 2vw;
+        padding-left: 2vw; } }
+  @media (max-width: 960px) {
+    .introduction .menu ul li {
+      letter-spacing: 3px;
+      display: inline-block;
+      font-size: 2.5vw; } }
+
+.sp_menu_wrap {
+  display: none; }
+
+@media (max-width: 768px) {
+  .introduction {
+    background-color: white; }
+    .introduction .container {
+      padding: 1.5vw;
+      display: block; }
+      .introduction .container .flex {
+        margin-top: 0; }
+        .introduction .container .flex h1 {
+          padding: 6vw;
+          padding-top: 7.5vw;
+          font-size: 15.5vw;
+          padding-bottom: 4vw; }
+        .introduction .container .flex p.concept_sp {
+          display: block;
+          font-size: 4.5vw;
+          letter-spacing: 0px;
+          line-height: 8vw;
+          padding: 0 9vw 3vw 9vw; }
+        .introduction .container .flex p.concept {
+          display: none; }
+        .introduction .container .flex p.capture_sp {
+          display: block;
+          font-size: 5vw;
+          padding-left: 9vw;
+          line-height: 6vw; }
+        .introduction .container .flex p.capture {
+          display: none; }
+        .introduction .container .flex p.tsubasa {
+          width: 35vw;
+          margin-top: 5vw;
+          margin-left: 8%; }
+    .introduction .menu {
+      display: none; }
+
+  .sp_menu_wrap {
+    display: block; }
+    .sp_menu_wrap .menu-btn {
+      position: fixed;
+      top: 0px;
+      right: 10px;
+      text-align: center;
+      z-index: 999 !important; }
+      .sp_menu_wrap .menu-btn span img {
+        display: block;
+        padding: 1vw 1.5vw;
+        border-radius: 8px;
+        margin-top: 13px; }
+    .sp_menu_wrap .menu_sp {
+      z-index: 999 !important;
+      position: fixed;
+      display: table;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.9);
+      -webkit-transition: all .5s;
+      transition: all .5s;
+      visibility: hidden;
+      opacity: 0; }
+      .sp_menu_wrap .menu_sp .close {
+        position: fixed;
+        right: 10px; }
+        .sp_menu_wrap .menu_sp .close span img {
+          margin-top: 13px;
+          display: black;
+          padding: 1vw 1.5vw; }
+      .sp_menu_wrap .menu_sp ul {
+        text-align: left;
+        padding: 18vw 5vw 0 5vw; }
+        .sp_menu_wrap .menu_sp ul li {
+          letter-spacing: 2vw;
+          display: block;
+          font-size: 7.5vw;
+          border-bottom: 1px solid white;
+          border-right: none; }
+          .sp_menu_wrap .menu_sp ul li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 4.5vw 1.5vw; }
+          .sp_menu_wrap .menu_sp ul li a:hover {
+            color: white;
+            -webkit-animation: none;
+            animation: none; }
+        .sp_menu_wrap .menu_sp ul li:last-child {
+          border-bottom: none; }
+    .sp_menu_wrap .open {
+      -webkit-transition: all .5s;
+      transition: all .5s;
+      visibility: visible;
+      opacity: 1; } }
+@media (max-width: 600px) {
+  .introduction .container .flex h1 {
+    text-align: center;
+    padding-top: 17.5vw;
+    font-size: 15vw;
+    padding-bottom: 4vw; }
+  .introduction .container .flex p.concept_sp {
+    font-size: 4.7vw;
+    line-height: 9vw;
+    padding: 0vw 9vw 4vw 9vw; }
+  .introduction .container .flex p.capture_sp {
+    line-height: 7vw; }
+  .introduction .container .flex p.tsubasa {
+    width: 42vw; }
+
+  .sp_menu_wrap .menu-btn {
+    font-size: 12px; }
+    .sp_menu_wrap .menu-btn span.navi {
+      padding: 5px 9px; }
+  .sp_menu_wrap .menu_sp ul li {
+    letter-spacing: 4px;
+    font-size: 8.5vw; }
+    .sp_menu_wrap .menu_sp ul li a {
+      padding: 5vw 2vw 5vw 2vw; } }
+.introduction .container .menu.follow {
+  position: fixed;
+  top: 0; }
+
+.introduction .follow {
+  position: fixed;
+  top: 0; }
+
+.spring_background {
+  padding-top: 56px;
+  margin-top: -56px; }
+  .spring_background .spring_title {
+    background-image: url(../images/background/spring_background-min.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 45vh;
+    background-attachment: fixed; }
+    .spring_background .spring_title h1 {
+      padding-top: 16vh;
+      text-align: center;
+      font-size: 9.3rem;
+      letter-spacing: 15px;
+      font-weight: lighter; }
+  @media (max-width: 1024px) {
+    .spring_background .spring_title {
+      height: 32vh; }
+      .spring_background .spring_title h1 {
+        padding-top: 10vh; } }
+  @media (max-width: 768px) {
+    .spring_background {
+      padding: 0;
+      margin: 0; }
+      .spring_background .spring_title {
+        background-attachment: scroll;
+        height: 28vh; }
+        .spring_background .spring_title h1 {
+          padding-top: 7.5vh;
+          font-size: 12rem; } }
+  @media (max-width: 600px) {
+    .spring_background .spring_title {
+      height: 28vh; }
+      .spring_background .spring_title h1 {
+        padding-top: 8vh;
+        font-size: 7.5rem; } }
+
+.spring .spring-wrapper {
+  padding: 70px;
+  box-sizing: border-box; }
+  .spring .spring-wrapper .photos {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row; }
+    .spring .spring-wrapper .photos .photo {
+      box-sizing: border-box;
+      width: 33.33333%;
+      margin-bottom: 80px;
+      padding: 0px 43px 0px 43px; }
+      .spring .spring-wrapper .photos .photo a {
+        outline: none; }
+        .spring .spring-wrapper .photos .photo a .pic {
+          position: relative; }
+          .spring .spring-wrapper .photos .photo a .pic img {
+            width: 100%;
+            height: 100%; }
+          .spring .spring-wrapper .photos .photo a .pic .caption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100%;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            opacity: 0;
+            padding: 1.3vw;
+            text-align: left;
+            box-sizing: border-box; }
+            .spring .spring-wrapper .photos .photo a .pic .caption h2 {
+              font-size: 4.5vw;
+              letter-spacing: 2.5px; }
+            .spring .spring-wrapper .photos .photo a .pic .caption h3 {
+              font-size: 1.8vw;
+              letter-spacing: 2px;
+              margin-top: 5px; }
+              .spring .spring-wrapper .photos .photo a .pic .caption h3 span {
+                font-size: 1.5vw; }
+            .spring .spring-wrapper .photos .photo a .pic .caption p {
+              font-size: 1.2vw;
+              padding-top: 0.7vw;
+              line-height: 1.5; }
+        .spring .spring-wrapper .photos .photo a .pic:hover .caption {
+          opacity: 1; }
+  .spring .spring-wrapper .show_more_s {
+    text-align: center; }
+    .spring .spring-wrapper .show_more_s a {
+      color: black;
+      font-size: 2.5rem;
+      font-weight: lighter; }
+    .spring .spring-wrapper .show_more_s a:hover {
+      color: #847b66; }
+@media (max-width: 1024px) {
+  .spring .spring-wrapper {
+    padding: 70px 30px; }
+    .spring .spring-wrapper .photos .photo {
+      margin-bottom: 55px;
+      padding: 0px 29px; } }
+@media (max-width: 768px) {
+  .spring .spring-wrapper {
+    padding: 40px;
+    z-index: 1; }
+    .spring .spring-wrapper .photos {
+      z-index: 1;
+      flex-direction: column; }
+      .spring .spring-wrapper .photos .photo {
+        z-index: 1;
+        width: 50%;
+        margin-bottom: 0px;
+        padding: 0px;
+        margin-bottom: 43px; }
+        .spring .spring-wrapper .photos .photo a .pic .caption {
+          z-index: 1;
+          left: 47vw;
+          color: black;
+          background-color: white;
+          width: 100%;
+          height: 100%;
+          -webkit-transition: none;
+          transition: none;
+          opacity: 1;
+          padding: 1.3vw; }
+          .spring .spring-wrapper .photos .photo a .pic .caption h2 {
+            font-size: 6.3vw;
+            letter-spacing: 2.5px; }
+          .spring .spring-wrapper .photos .photo a .pic .caption h3 {
+            font-size: 3.8vw;
+            letter-spacing: 2px;
+            margin-top: 6px; }
+            .spring .spring-wrapper .photos .photo a .pic .caption h3 span {
+              font-size: 3.5vw; }
+          .spring .spring-wrapper .photos .photo a .pic .caption p {
+            font-size: 3vw;
+            padding-top: 1vw;
+            line-height: 1.5; }
+    .spring .spring-wrapper .show_more_s {
+      margin: 10px; }
+      .spring .spring-wrapper .show_more_s a:hover {
+        color: white; } }
+@media (max-width: 600px) {
+  .spring .spring-wrapper {
+    padding: 30px 20px 20px 20px; }
+    .spring .spring-wrapper .photos .photo {
+      margin-bottom: 20px; } }
+
+.summer_background {
+  padding-top: 48px;
+  margin-top: -48px; }
+  .summer_background .summer_title {
+    background-image: url(../images/background/summer_background-min.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 45vh;
+    background-attachment: fixed; }
+    .summer_background .summer_title h1 {
+      padding-top: 17vh;
+      text-align: center;
+      font-size: 9.3rem;
+      letter-spacing: 15px;
+      font-weight: lighter; }
+  @media (max-width: 1024px) {
+    .summer_background .summer_title {
+      height: 32vh; }
+      .summer_background .summer_title h1 {
+        padding-top: 10vh; } }
+  @media (max-width: 768px) {
+    .summer_background {
+      padding: 0;
+      margin: 0; }
+      .summer_background .summer_title {
+        background-attachment: scroll;
+        height: 28vh; }
+        .summer_background .summer_title h1 {
+          padding-top: 7.5vh;
+          font-size: 12rem; } }
+  @media (max-width: 600px) {
+    .summer_background {
+      padding: 0;
+      margin: 0; }
+      .summer_background .summer_title {
+        height: 28vh; }
+        .summer_background .summer_title h1 {
+          padding-top: 8vh;
+          font-size: 7.5rem; } }
+
+.summer .summer-wrapper {
+  padding: 70px;
+  box-sizing: border-box; }
+  .summer .summer-wrapper .photos {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row; }
+    .summer .summer-wrapper .photos .photo2 {
+      box-sizing: border-box;
+      width: 33.33333%;
+      margin-bottom: 80px;
+      padding: 0px 43px; }
+      .summer .summer-wrapper .photos .photo2 a {
+        outline: none; }
+        .summer .summer-wrapper .photos .photo2 a .pic {
+          position: relative; }
+          .summer .summer-wrapper .photos .photo2 a .pic img {
+            width: 100%;
+            height: 100%; }
+          .summer .summer-wrapper .photos .photo2 a .pic .caption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100%;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            opacity: 0;
+            padding: 1.3vw;
+            text-align: left;
+            box-sizing: border-box; }
+            .summer .summer-wrapper .photos .photo2 a .pic .caption h2 {
+              font-size: 4.5vw;
+              letter-spacing: 2.5px; }
+            .summer .summer-wrapper .photos .photo2 a .pic .caption h3 {
+              font-size: 1.8vw;
+              letter-spacing: 2px;
+              margin-top: 5px; }
+              .summer .summer-wrapper .photos .photo2 a .pic .caption h3 span {
+                font-size: 1.5vw; }
+            .summer .summer-wrapper .photos .photo2 a .pic .caption p {
+              font-size: 1.2vw;
+              padding-top: 0.7vw;
+              line-height: 1.5; }
+        .summer .summer-wrapper .photos .photo2 a .pic:hover .caption {
+          opacity: 1; }
+  .summer .summer-wrapper .show_more_su {
+    text-align: center; }
+    .summer .summer-wrapper .show_more_su a {
+      color: black;
+      font-size: 2.5rem;
+      font-weight: lighter; }
+    .summer .summer-wrapper .show_more_su a:hover {
+      color: #847b66; }
+@media (max-width: 1024px) {
+  .summer .summer-wrapper {
+    padding: 70px 30px; }
+    .summer .summer-wrapper .photos .photo2 {
+      margin-bottom: 55px;
+      padding: 0px 29px; } }
+@media (max-width: 768px) {
+  .summer .summer-wrapper {
+    padding: 40px;
+    z-index: 1; }
+    .summer .summer-wrapper .photos {
+      z-index: 1;
+      flex-direction: column; }
+      .summer .summer-wrapper .photos .photo2 {
+        z-index: 1;
+        width: 50%;
+        margin-bottom: 0px;
+        padding: 0px;
+        margin-bottom: 43px; }
+        .summer .summer-wrapper .photos .photo2 a .pic .caption {
+          z-index: 1;
+          left: 47vw;
+          color: black;
+          background-color: white;
+          width: 100%;
+          height: 100%;
+          -webkit-transition: none;
+          transition: none;
+          opacity: 1;
+          padding: 1.3vw; }
+          .summer .summer-wrapper .photos .photo2 a .pic .caption h2 {
+            font-size: 6.3vw;
+            letter-spacing: 2.5px; }
+          .summer .summer-wrapper .photos .photo2 a .pic .caption h3 {
+            font-size: 3.8vw;
+            letter-spacing: 2px;
+            margin-top: 6px; }
+            .summer .summer-wrapper .photos .photo2 a .pic .caption h3 span {
+              font-size: 3.5vw; }
+          .summer .summer-wrapper .photos .photo2 a .pic .caption p {
+            font-size: 3vw;
+            padding-top: 1vw;
+            line-height: 1.5; }
+    .summer .summer-wrapper .show_more_su {
+      margin: 10px; }
+      .summer .summer-wrapper .show_more_su a:hover {
+        color: white; } }
+@media (max-width: 600px) {
+  .summer .summer-wrapper {
+    padding: 30px 20px 20px 20px; }
+    .summer .summer-wrapper .photos .photo2 {
+      margin-bottom: 20px; } }
+
+.autumn_background {
+  padding-top: 48px;
+  margin-top: -48px; }
+  .autumn_background .autumn_title {
+    background-image: url(../images/background/autumn_background-min.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 45vh;
+    background-attachment: fixed; }
+    .autumn_background .autumn_title h1 {
+      padding-top: 17vh;
+      text-align: center;
+      font-size: 9.3rem;
+      letter-spacing: 15px;
+      font-weight: lighter; }
+  @media (max-width: 1024px) {
+    .autumn_background .autumn_title {
+      height: 32vh; }
+      .autumn_background .autumn_title h1 {
+        padding-top: 10vh; } }
+  @media (max-width: 768px) {
+    .autumn_background {
+      padding: 0;
+      margin: 0; }
+      .autumn_background .autumn_title {
+        height: 28vh;
+        background-attachment: scroll; }
+        .autumn_background .autumn_title h1 {
+          padding-top: 7.5vh;
+          font-size: 12rem; } }
+  @media (max-width: 600px) {
+    .autumn_background {
+      padding: 0;
+      margin: 0; }
+      .autumn_background .autumn_title {
+        height: 28vh; }
+        .autumn_background .autumn_title h1 {
+          padding-top: 8vh;
+          font-size: 7.5rem; } }
+
+.autumn .autumn-wrapper {
+  padding: 70px;
+  box-sizing: border-box; }
+  .autumn .autumn-wrapper .photos {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row; }
+    .autumn .autumn-wrapper .photos .photo3 {
+      box-sizing: border-box;
+      width: 33.33333%;
+      margin-bottom: 80px;
+      padding: 0px 43px; }
+      .autumn .autumn-wrapper .photos .photo3 a {
+        outline: none; }
+        .autumn .autumn-wrapper .photos .photo3 a .pic {
+          position: relative; }
+          .autumn .autumn-wrapper .photos .photo3 a .pic img {
+            width: 100%;
+            height: 100%; }
+          .autumn .autumn-wrapper .photos .photo3 a .pic .caption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100%;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            opacity: 0;
+            padding: 1.3vw;
+            text-align: left;
+            box-sizing: border-box; }
+            .autumn .autumn-wrapper .photos .photo3 a .pic .caption h2 {
+              font-size: 4.5vw;
+              letter-spacing: 2.5px; }
+            .autumn .autumn-wrapper .photos .photo3 a .pic .caption h3 {
+              font-size: 1.8vw;
+              letter-spacing: 2px;
+              margin-top: 5px; }
+              .autumn .autumn-wrapper .photos .photo3 a .pic .caption h3 span {
+                font-size: 1.5vw; }
+            .autumn .autumn-wrapper .photos .photo3 a .pic .caption p {
+              font-size: 1.2vw;
+              padding-top: 0.7vw;
+              line-height: 1.5; }
+        .autumn .autumn-wrapper .photos .photo3 a .pic:hover .caption {
+          opacity: 1; }
+  .autumn .autumn-wrapper .show_more_a {
+    text-align: center; }
+    .autumn .autumn-wrapper .show_more_a a {
+      color: black;
+      font-size: 2.5rem;
+      font-weight: lighter; }
+    .autumn .autumn-wrapper .show_more_a a:hover {
+      color: #847b66; }
+@media (max-width: 1024px) {
+  .autumn .autumn-wrapper {
+    padding: 70px 30px; }
+    .autumn .autumn-wrapper .photos .photo3 {
+      margin-bottom: 55px;
+      padding: 0px 29px; } }
+@media (max-width: 768px) {
+  .autumn .autumn-wrapper {
+    padding: 40px;
+    z-index: 1; }
+    .autumn .autumn-wrapper .photos {
+      z-index: 1;
+      flex-direction: column; }
+      .autumn .autumn-wrapper .photos .photo3 {
+        z-index: 1;
+        width: 50%;
+        margin-bottom: 0px;
+        padding: 0px;
+        margin-bottom: 43px; }
+        .autumn .autumn-wrapper .photos .photo3 a .pic .caption {
+          z-index: 1;
+          left: 47vw;
+          color: black;
+          background-color: white;
+          width: 100%;
+          height: 100%;
+          -webkit-transition: none;
+          transition: none;
+          opacity: 1;
+          padding: 1.3vw; }
+          .autumn .autumn-wrapper .photos .photo3 a .pic .caption h2 {
+            font-size: 6.3vw;
+            letter-spacing: 2.5px; }
+          .autumn .autumn-wrapper .photos .photo3 a .pic .caption h3 {
+            font-size: 3.8vw;
+            letter-spacing: 2px;
+            margin-top: 6px; }
+            .autumn .autumn-wrapper .photos .photo3 a .pic .caption h3 span {
+              font-size: 3.5vw; }
+          .autumn .autumn-wrapper .photos .photo3 a .pic .caption p {
+            font-size: 3vw;
+            padding-top: 1vw;
+            line-height: 1.5; }
+    .autumn .autumn-wrapper .show_more_a {
+      margin: 10px; }
+      .autumn .autumn-wrapper .show_more_a a:hover {
+        color: white; } }
+@media (max-width: 600px) {
+  .autumn .autumn-wrapper {
+    padding: 30px 20px 20px 20px; }
+    .autumn .autumn-wrapper .photos .photo3 {
+      margin-bottom: 20px; } }
+
+.winter_background {
+  padding-top: 48px;
+  margin-top: -48px; }
+  .winter_background .winter_title {
+    background-image: url(../images/background/winter_background-min1.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 45vh;
+    background-attachment: fixed; }
+    .winter_background .winter_title h1 {
+      padding-top: 17vh;
+      text-align: center;
+      font-size: 9.3rem;
+      letter-spacing: 15px;
+      font-weight: lighter; }
+  @media (max-width: 1024px) {
+    .winter_background .winter_title {
+      height: 32vh; }
+      .winter_background .winter_title h1 {
+        padding-top: 10vh; } }
+  @media (max-width: 768px) {
+    .winter_background {
+      padding: 0;
+      margin: 0; }
+      .winter_background .winter_title {
+        height: 28vh;
+        background-attachment: scroll; }
+        .winter_background .winter_title h1 {
+          padding-top: 7.5vh;
+          font-size: 12rem; } }
+  @media (max-width: 600px) {
+    .winter_background {
+      padding: 0;
+      margin: 0; }
+      .winter_background .winter_title {
+        height: 28vh; }
+        .winter_background .winter_title h1 {
+          padding-top: 8vh;
+          font-size: 7.5rem; } }
+
+.winter .winter-wrapper {
+  padding: 70px;
+  box-sizing: border-box; }
+  .winter .winter-wrapper .photos {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row; }
+    .winter .winter-wrapper .photos .photo4 {
+      box-sizing: border-box;
+      width: 33.33333%;
+      margin-bottom: 80px;
+      padding: 0px 43px; }
+      .winter .winter-wrapper .photos .photo4 a {
+        outline: none; }
+        .winter .winter-wrapper .photos .photo4 a .pic {
+          position: relative; }
+          .winter .winter-wrapper .photos .photo4 a .pic img {
+            width: 100%;
+            height: 100%; }
+          .winter .winter-wrapper .photos .photo4 a .pic .caption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100%;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            opacity: 0;
+            padding: 1.3vw;
+            text-align: left;
+            box-sizing: border-box; }
+            .winter .winter-wrapper .photos .photo4 a .pic .caption h2 {
+              font-size: 4.5vw;
+              letter-spacing: 2.5px; }
+            .winter .winter-wrapper .photos .photo4 a .pic .caption h3 {
+              font-size: 1.8vw;
+              letter-spacing: 2px;
+              margin-top: 5px; }
+              .winter .winter-wrapper .photos .photo4 a .pic .caption h3 span {
+                font-size: 1.5vw; }
+            .winter .winter-wrapper .photos .photo4 a .pic .caption p {
+              font-size: 1.2vw;
+              padding-top: 0.7vw;
+              line-height: 1.5; }
+        .winter .winter-wrapper .photos .photo4 a .pic:hover .caption {
+          opacity: 1; }
+  .winter .winter-wrapper .show_more_w {
+    text-align: center; }
+    .winter .winter-wrapper .show_more_w a {
+      color: black;
+      font-size: 2.5rem;
+      font-weight: lighter; }
+    .winter .winter-wrapper .show_more_w a:hover {
+      color: #847b66; }
+@media (max-width: 1024px) {
+  .winter .winter-wrapper {
+    padding: 70px 30px 70px 30px; }
+    .winter .winter-wrapper .photos .photo4 {
+      margin-bottom: 55px;
+      padding: 0px 29px; } }
+@media (max-width: 768px) {
+  .winter .winter-wrapper {
+    padding: 40px;
+    z-index: 1; }
+    .winter .winter-wrapper .photos {
+      z-index: 1;
+      flex-direction: column; }
+      .winter .winter-wrapper .photos .photo4 {
+        z-index: 1;
+        width: 50%;
+        margin-bottom: 0px;
+        padding: 0px;
+        margin-bottom: 43px; }
+        .winter .winter-wrapper .photos .photo4 a .pic .caption {
+          z-index: 1;
+          left: 47vw;
+          color: black;
+          background-color: white;
+          width: 100%;
+          height: 100%;
+          -webkit-transition: none;
+          transition: none;
+          opacity: 1;
+          padding: 1.3vw; }
+          .winter .winter-wrapper .photos .photo4 a .pic .caption h2 {
+            font-size: 6.3vw;
+            letter-spacing: 2.5px; }
+          .winter .winter-wrapper .photos .photo4 a .pic .caption h3 {
+            font-size: 3.8vw;
+            letter-spacing: 2px;
+            margin-top: 6px; }
+            .winter .winter-wrapper .photos .photo4 a .pic .caption h3 span {
+              font-size: 3.5vw; }
+          .winter .winter-wrapper .photos .photo4 a .pic .caption p {
+            font-size: 3vw;
+            padding-top: 1vw;
+            line-height: 1.5; }
+    .winter .winter-wrapper .show_more_w {
+      margin: 10px; }
+      .winter .winter-wrapper .show_more_w a:hover {
+        color: white; } }
+@media (max-width: 600px) {
+  .winter .winter-wrapper {
+    padding: 30px 20px 20px 20px; }
+    .winter .winter-wrapper .photos .photo4 {
+      margin-bottom: 20px; } }
+
+.about_me_background {
+  margin-top: -48px;
+  padding-top: 48px;
+  margin-bottom: 30px; }
+  .about_me_background .about_me_title {
+    background-image: url(../images/background/about_me_background.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 45vh;
+    background-attachment: fixed; }
+    .about_me_background .about_me_title h1 {
+      padding-top: 17vh;
+      text-align: center;
+      font-size: 9.3rem;
+      letter-spacing: 15px;
+      font-weight: lighter; }
+  @media (max-width: 1024px) {
+    .about_me_background .about_me_title {
+      height: 32vh; }
+      .about_me_background .about_me_title h1 {
+        padding-top: 10vh; } }
+  @media (max-width: 960px) {
+    .about_me_background .about_me_title {
+      background-image: url(../images/about_me.jpg); } }
+  @media (max-width: 768px) {
+    .about_me_background {
+      padding: 0;
+      margin: 0; }
+      .about_me_background .about_me_title {
+        height: 28vh;
+        margin-bottom: 5vw;
+        background-attachment: scroll; }
+        .about_me_background .about_me_title h1 {
+          padding-top: 7.5vh;
+          font-size: 12rem; } }
+  @media (max-width: 600px) {
+    .about_me_background .about_me_title {
+      height: 28vh; }
+      .about_me_background .about_me_title h1 {
+        padding-top: 8vh;
+        font-size: 7.4rem;
+        letter-spacing: 10px; } }
+
+.about_me {
+  margin-bottom: 40px; }
+  .about_me .about_me_wrapper {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    text-align: center; }
+    .about_me .about_me_wrapper .contents h2 {
+      font-size: 2.7rem;
+      padding-bottom: 20px; }
+    .about_me .about_me_wrapper .contents p {
+      word-wrap: break-word;
+      font-size: 1.6rem;
+      line-height: 2; }
+    .about_me .about_me_wrapper .contents p.sp {
+      display: none; }
+  .about_me .social ul {
+    text-align: center; }
+    .about_me .social ul li {
+      margin-right: 50px;
+      display: inline-block; }
+      .about_me .social ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 3.2rem;
+        display: inline-block; }
+      .about_me .social ul li a:hover {
+        color: #847b66;
+        -webkit-animation: zoom .3s;
+        animation: zoom .3s; }
+@-webkit-keyframes zoom {
+  50% {
+    -webkit-transform: scale(1.05); } }
+@keyframes zoom {
+  50% {
+    transform: scale(1.05); } }
+    .about_me .social ul li:last-child {
+      margin-right: 0; }
+  @media (max-width: 960px) {
+    .about_me .about_me_wrapper {
+      width: 80%; }
+      .about_me .about_me_wrapper .contents p.sp {
+        display: block;
+        font-size: 1.6rem;
+        line-height: 2.2; }
+      .about_me .about_me_wrapper .contents p {
+        display: none; } }
+  @media (max-width: 768px) {
+    .about_me .about_me_wrapper .contents h2 {
+      text-align: left; }
+    .about_me .about_me_wrapper .contents p.sp {
+      text-align: left; }
+    .about_me .social ul li {
+      margin-right: 70px; }
+      .about_me .social ul li a {
+        font-size: 4rem; }
+      .about_me .social ul li a:hover {
+        color: white;
+        -webkit-animation: none;
+        animation: none; }
+    @-webkit-keyframes zoom {
+      50% {
+        -webkit-transform: none; } }
+    @keyframes zoom {
+      50% {
+        transform: none; } } }
+  @media (max-width: 600px) {
+    .about_me .about_me_wrapper .contents p.sp {
+      line-height: 1.9; }
+    .about_me .social ul li {
+      margin-right: 50px; }
+      .about_me .social ul li a {
+        font-size: 3.2rem; } }
+
+footer {
+  padding: 10px;
+  text-align: center; }
+  footer small {
+    font-size: 1.3rem; }
+
+#infscr-loading {
+  text-align: center;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=style.css.map */
